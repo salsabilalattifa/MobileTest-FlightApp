@@ -8,10 +8,7 @@ Click Search Button On Home Screen
     CLick Element    locator=${search-button}
 
 Verify Successfully Access Search Page
-    Wait Until Element Is Visible    locator=${search_page}
-    Element Should Contain Text    locator=${search_page}    
-    ...    expected=${text_search_page}    
-    ...    message=Text tidak ditemukan!
+    Wait Until Page Contains    ${text_search_page}
 
 Input Flight Number
     Wait Until Element Is Visible    locator=${flight_number_input} 
@@ -28,5 +25,5 @@ Verify Flight Number Exist
     Element Should Be Visible    locator=${table}    
 
 Verify Failed Search Flight Number
-    Wait Until Page Contains    Please enter valid Flight Number
+    Wait Until Page Contains    ${error_message_search}
         
