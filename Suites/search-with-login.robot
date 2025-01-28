@@ -15,7 +15,7 @@ User can search flight number booking id
     Click Sign In Button On Login Screen
     Verify User Successfully Login
     Click Search Button On Home Screen
-    #Verify Successfully Access Search Page
+    Verify Successfully Access Search Page
     Input Flight Number    flight_number=DA935
     Click Search Button On Search Screen
     Verify Flight Number Exist
@@ -28,5 +28,6 @@ User only click search button
     Click Sign In Button On Login Screen
     Verify User Successfully Login
     Click Search Button On Home Screen
+    Verify Successfully Access Search Page
     Click Search Button On Search Screen
     Verify Failed Search Flight Number
